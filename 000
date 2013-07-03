@@ -1,0 +1,14 @@
+def myLog(x, b):
+    '''
+    x: a positive integer
+    b: a positive integer; b >= 2
+
+    returns: log_b(x), or, the logarithm of x relative to a base b.
+    '''
+    i=0
+    while i <= x:
+        if b**i<=x:
+           max_s = i
+           i += 1
+        else: break
+    return max_s
